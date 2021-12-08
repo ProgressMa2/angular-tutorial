@@ -1,0 +1,90 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+1 info using npm@8.1.4
+2 info using node@v17.2.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/root/angular-tour-of-heroes/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/root/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 2ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 11ms
+19 timing npm:load:configload Completed in 11ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 0ms
+22 timing config:load:flatten Completed in 3ms
+23 timing npm:load:cleanupLog Completed in 2ms
+24 timing npm:load:configScope Completed in 0ms
+25 timing npm:load:projectScope Completed in 6ms
+26 timing npm:load Completed in 28ms
+27 timing arborist:ctor Completed in 1ms
+28 timing arborist:ctor Completed in 0ms
+29 timing idealTree:init Completed in 5923ms
+30 timing idealTree:userRequests Completed in 0ms
+31 silly idealTree buildDeps
+32 silly fetch manifest @angular/animations@12.2.14
+33 http fetch GET 200 https://registry.npmjs.org/@angular%2fanimations 1552ms (cache revalidated)
+34 silly fetch manifest @angular/core@12.2.14
+35 http fetch GET 200 https://registry.npmjs.org/@angular%2fcore 1301ms (cache revalidated)
+36 silly fetch manifest rxjs@7.4.0
+37 http fetch GET 200 https://registry.npmjs.org/rxjs 144ms (cache revalidated)
+38 silly fetch manifest zone.js@0.11.4
+39 http fetch GET 200 https://registry.npmjs.org/zone.js 773ms (cache revalidated)
+40 silly fetch manifest @angular/common@12.2.14
+41 http fetch GET 200 https://registry.npmjs.org/@angular%2fcommon 864ms (cache revalidated)
+42 silly fetch manifest @angular/compiler@12.2.14
+43 http fetch GET 200 https://registry.npmjs.org/@angular%2fcompiler 1337ms (cache revalidated)
+44 silly fetch manifest @angular/forms@12.2.14
+45 http fetch GET 200 https://registry.npmjs.org/@angular%2fforms 1289ms (cache revalidated)
+46 silly fetch manifest @angular/platform-browser@12.2.14
+47 http fetch GET 200 https://registry.npmjs.org/@angular%2fplatform-browser 1351ms (cache revalidated)
+48 silly fetch manifest @angular/platform-browser-dynamic@12.2.14
+49 http fetch GET 200 https://registry.npmjs.org/@angular%2fplatform-browser-dynamic 1348ms (cache revalidated)
+50 silly fetch manifest @angular/router@12.2.14
+51 http fetch GET 200 https://registry.npmjs.org/@angular%2frouter 921ms (cache revalidated)
+52 silly fetch manifest angular-in-memory-web-api@^0.13.0
+53 http fetch GET 200 https://registry.npmjs.org/angular-in-memory-web-api 721ms (cache revalidated)
+54 silly fetch manifest @angular/common@^13.0.0
+55 timing idealTree Completed in 17605ms
+56 timing command:install Completed in 17636ms
+57 verbose stack Error: unable to resolve dependency tree
+57 verbose stack     at Arborist.[failPeerConflict] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1356:25)
+57 verbose stack     at Arborist.[loadPeerSet] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1322:34)
+57 verbose stack     at async Arborist.[buildDepStep] (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:930:11)
+57 verbose stack     at async Arborist.buildIdealTree (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:216:7)
+57 verbose stack     at async Promise.all (index 1)
+57 verbose stack     at async Arborist.reify (/usr/local/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:149:5)
+57 verbose stack     at async Install.exec (/usr/local/lib/node_modules/npm/lib/commands/install.js:157:5)
+57 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli.js:65:5)
+58 verbose cwd /root/angular-tour-of-heroes
+59 verbose Linux 5.10.16.3-microsoft-standard-WSL2
+60 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+61 verbose node v17.2.0
+62 verbose npm  v8.1.4
+63 error code ERESOLVE
+64 error ERESOLVE unable to resolve dependency tree
+65 error
+66 error While resolving: [1mangular[22m@[1m0.0.0[22m
+66 error Found: [1m@angular/common[22m@[1m12.2.14[22m[2m[22m
+66 error [2mnode_modules/@angular/common[22m
+66 error   [1m@angular/common[22m@"[1m12.2.14[22m" from the root project
+66 error
+66 error Could not resolve dependency:
+66 error [35mpeer[39m [1m@angular/common[22m@"[1m^13.0.0[22m" from [1mangular-in-memory-web-api[22m@[1m0.13.0[22m[2m[22m
+66 error [2mnode_modules/angular-in-memory-web-api[22m
+66 error   [1mangular-in-memory-web-api[22m@"[1m^0.13.0[22m" from the root project
+66 error
+66 error Fix the upstream dependency conflict, or retry
+66 error this command with --force, or --legacy-peer-deps
+66 error to accept an incorrect (and potentially broken) dependency resolution.
+66 error
+66 error See /root/.npm/eresolve-report.txt for a full report.
+67 verbose exit 1

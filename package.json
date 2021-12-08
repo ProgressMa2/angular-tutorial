@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "ng serve --host 0.0.0.0 --poll 1"
+  },
+  "dependencies": {
+    "angular-in-memory-web-api": "^0.13.0"
+  }
+}

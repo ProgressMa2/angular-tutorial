@@ -1,0 +1,83 @@
+0 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'list' ]
+1 info using npm@8.1.4
+2 info using node@v17.2.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/root/angular-tour-of-heroes/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 3ms
+11 timing config:load:file:/root/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 12ms
+19 timing npm:load:configload Completed in 13ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 0ms
+22 timing config:load:flatten Completed in 3ms
+23 timing npm:load:cleanupLog Completed in 2ms
+24 timing npm:load:configScope Completed in 0ms
+25 timing npm:load:projectScope Completed in 7ms
+26 timing npm:load Completed in 29ms
+27 timing arborist:ctor Completed in 2ms
+28 timing command:list Completed in 3751ms
+29 verbose stack Error: extraneous: __ngcc_entry_points__.json@ /root/angular-tour-of-heroes/node_modules/__ngcc_entry_points__.json
+29 verbose stack invalid: @angular-devkit/build-angular@13.0.4 /root/angular-tour-of-heroes/node_modules/@angular-devkit/build-angular
+29 verbose stack invalid: @angular/animations@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/animations
+29 verbose stack invalid: @angular/cli@13.0.4 /root/angular-tour-of-heroes/node_modules/@angular/cli
+29 verbose stack invalid: @angular/common@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/common
+29 verbose stack invalid: @angular/compiler-cli@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/compiler-cli
+29 verbose stack invalid: @angular/compiler@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/compiler
+29 verbose stack invalid: @angular/core@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/core
+29 verbose stack invalid: @angular/forms@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/forms
+29 verbose stack invalid: @angular/platform-browser-dynamic@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/platform-browser-dynamic
+29 verbose stack invalid: @angular/platform-browser@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/platform-browser
+29 verbose stack invalid: @angular/router@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/router
+29 verbose stack invalid: @types/jasmine@3.10.2 /root/angular-tour-of-heroes/node_modules/@types/jasmine
+29 verbose stack missing: angular-in-memory-web-api@^0.13.0, required by angular@0.0.0
+29 verbose stack missing: codelyzer@^6.0.0, required by angular@0.0.0
+29 verbose stack invalid: jasmine-core@3.10.1 /root/angular-tour-of-heroes/node_modules/jasmine-core
+29 verbose stack missing: jasmine-spec-reporter@~5.0.0, required by angular@0.0.0
+29 verbose stack invalid: karma@6.3.9 /root/angular-tour-of-heroes/node_modules/karma
+29 verbose stack missing: protractor@~7.0.0, required by angular@0.0.0
+29 verbose stack missing: ts-node@~8.3.0, required by angular@0.0.0
+29 verbose stack missing: tslint@~6.1.0, required by angular@0.0.0
+29 verbose stack invalid: typescript@4.4.4 /root/angular-tour-of-heroes/node_modules/typescript
+29 verbose stack     at LS.exec (/usr/local/lib/node_modules/npm/lib/commands/ls.js:209:9)
+29 verbose stack     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+29 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli.js:65:5)
+30 verbose cwd /root/angular-tour-of-heroes
+31 verbose Linux 5.10.16.3-microsoft-standard-WSL2
+32 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "list"
+33 verbose node v17.2.0
+34 verbose npm  v8.1.4
+35 error code ELSPROBLEMS
+36 error extraneous: __ngcc_entry_points__.json@ /root/angular-tour-of-heroes/node_modules/__ngcc_entry_points__.json
+36 error invalid: @angular-devkit/build-angular@13.0.4 /root/angular-tour-of-heroes/node_modules/@angular-devkit/build-angular
+36 error invalid: @angular/animations@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/animations
+36 error invalid: @angular/cli@13.0.4 /root/angular-tour-of-heroes/node_modules/@angular/cli
+36 error invalid: @angular/common@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/common
+36 error invalid: @angular/compiler-cli@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/compiler-cli
+36 error invalid: @angular/compiler@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/compiler
+36 error invalid: @angular/core@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/core
+36 error invalid: @angular/forms@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/forms
+36 error invalid: @angular/platform-browser-dynamic@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/platform-browser-dynamic
+36 error invalid: @angular/platform-browser@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/platform-browser
+36 error invalid: @angular/router@13.0.3 /root/angular-tour-of-heroes/node_modules/@angular/router
+36 error invalid: @types/jasmine@3.10.2 /root/angular-tour-of-heroes/node_modules/@types/jasmine
+36 error missing: angular-in-memory-web-api@^0.13.0, required by angular@0.0.0
+36 error missing: codelyzer@^6.0.0, required by angular@0.0.0
+36 error invalid: jasmine-core@3.10.1 /root/angular-tour-of-heroes/node_modules/jasmine-core
+36 error missing: jasmine-spec-reporter@~5.0.0, required by angular@0.0.0
+36 error invalid: karma@6.3.9 /root/angular-tour-of-heroes/node_modules/karma
+36 error missing: protractor@~7.0.0, required by angular@0.0.0
+36 error missing: ts-node@~8.3.0, required by angular@0.0.0
+36 error missing: tslint@~6.1.0, required by angular@0.0.0
+36 error invalid: typescript@4.4.4 /root/angular-tour-of-heroes/node_modules/typescript
+37 verbose exit 1

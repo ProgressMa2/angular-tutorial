@@ -1,0 +1,81 @@
+# npm resolution error report
+
+2021-12-07T02:37:07.330Z
+
+While resolving: angular@0.0.0
+Found: @angular/common@12.2.14
+node_modules/@angular/common
+  @angular/common@"12.2.14" from the root project
+
+Could not resolve dependency:
+peer @angular/common@"^13.0.0" from angular-in-memory-web-api@0.13.0
+node_modules/angular-in-memory-web-api
+  angular-in-memory-web-api@"^0.13.0" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "current": {
+    "name": "@angular/common",
+    "version": "12.2.14",
+    "whileInstalling": {
+      "name": "angular",
+      "version": "0.0.0",
+      "path": "/root/angular-tour-of-heroes"
+    },
+    "location": "node_modules/@angular/common",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "@angular/common",
+        "spec": "12.2.14",
+        "from": {
+          "location": "/root/angular-tour-of-heroes"
+        }
+      }
+    ]
+  },
+  "currentEdge": {
+    "type": "prod",
+    "name": "@angular/common",
+    "spec": "12.2.14",
+    "from": {
+      "location": "/root/angular-tour-of-heroes"
+    }
+  },
+  "edge": {
+    "type": "peer",
+    "name": "@angular/common",
+    "spec": "^13.0.0",
+    "error": "INVALID",
+    "from": {
+      "name": "angular-in-memory-web-api",
+      "version": "0.13.0",
+      "whileInstalling": {
+        "name": "angular",
+        "version": "0.0.0",
+        "path": "/root/angular-tour-of-heroes"
+      },
+      "location": "node_modules/angular-in-memory-web-api",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "angular-in-memory-web-api",
+          "spec": "^0.13.0",
+          "from": {
+            "location": "/root/angular-tour-of-heroes"
+          }
+        }
+      ]
+    }
+  },
+  "strictPeerDeps": false,
+  "force": false
+}
